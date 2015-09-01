@@ -1,0 +1,247 @@
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  border-radius: 0 !important;
+}
+
+body {
+  width: 100%;
+}
+
+.logo {
+  max-height: 50px;
+  width: auto;
+  display: inline-block;
+  float: left;
+}
+
+#header {
+  margin: 0;
+}
+
+.align-right {
+  margin-right: 50px !important;
+  display: inline-block !important;
+  float: right;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.navbar,
+.navbar-header {
+  min-height: 80px;
+}
+
+.navbar-default .navbar-toggle {
+  border: none !important;
+  margin-top: 23px;
+}
+
+.nav>li {
+  margin-top: 15px;
+}
+
+.align-vertical {
+  width: 200px;
+  margin: 20px 60px 20px 20px;
+  padding: 6px 12px;
+}
+
+.align-vertical>input {
+  width: 50px;
+  border: 1px solid #C9302C;
+}
+
+label {
+  margin-right: 10px;
+}
+
+#payment, #confirmation, #pickup {
+  margin-left: 30%;
+  margin-right: 100px;
+}
+
+/* ----------- Breadcrumb ----------- */
+.breadcrumb {
+  margin: 0 15%;
+  padding: 0 !important;
+  background-color: transparent;
+  list-style: none;
+  overflow: hidden;
+  font: 18px Helvetica, Arial, Sans-Serif;
+}
+.breadcrumb li {
+  float: left;
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0 10px 40px;
+  background: brown;                   /* fallback color */
+  background: hsla(34,85%,35%,1);
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.breadcrumb li a.active {
+  background: green !important;
+}
+
+.breadcrumb li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(34,85%,35%,1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+.breadcrumb li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+.breadcrumb li:first-child a {
+  padding-left: 10px;
+}
+.breadcrumb li:nth-child(1) a { background: hsla(34,85%,45%,0.5); }
+.breadcrumb li:nth-child(1) a:after { border-left-color: hsla(34,85%,45%,0.5); }
+.breadcrumb li:nth-child(2) a { background: hsla(34,85%,45%,0.5); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(34,85%,45%,0.5); }
+.breadcrumb li:nth-child(3) a { background: hsla(34,85%,55%,0.5); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(34,85%,55%,0.5); }
+.breadcrumb li:nth-child(4) a { background: hsla(34,85%,65%,0.5); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(34,85%,65%,0.5); }
+.breadcrumb li:nth-child(5) a { background: hsla(34,85%,75%,0.5); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,0.5); }
+
+.breadcrumb li a.active { background: #C9302C !important; }
+.breadcrumb li a.active:after { border-left-color: #C9302C !important; }
+
+
+/* ----------- Grid ----------- */
+#content {
+  margin: 0 12%;
+}
+
+.grid {
+  height: 200px;
+  width: 200px;
+  background: hsla(34,85%,45%,1);
+  color: #ffffff;
+  border-radius: 10px !important;
+  margin: 5px;
+  line-height: 200px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+
+.grid:hover {
+  cursor: pointer;
+  background-color: #C9302C;
+  transition: all 250ms ease;
+}
+
+.grid.active {
+  background: #C9302C;
+  transition: all 250ms ease;
+}
+
+ul.base {
+  list-style-type: none;
+}
+
+/* ----------- Time picker ----------- */
+
+.btn.btn-link {
+  margin: 0 !important;
+}
+
+tr, td.form-group {
+  height: 34px !important;
+}
+
+/* ----------- Media Queries ----------- */
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+  .navbar,
+  .navbar-header {
+    width: 100%;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+  .navbar,
+  .navbar-header {
+    width: 100%;
+  }
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .navbar,
+  .navbar-header {
+    min-height: 60px;
+  }
+
+  .logo {
+    max-height: 30px;
+  }
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar,
+  .navbar-header {
+    min-height: 60px;
+  }
+
+  .logo {
+    max-height: 30px;
+  }
+}

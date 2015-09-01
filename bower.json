@@ -1,0 +1,22 @@
+{
+  "name": "FoodToGo",
+  "version": "0.0.0",
+  "authors": [
+    "ramya.narayanaswamy@gmail.com"
+  ],
+  "description": "UC Berkeley Cafeteria's Web app for order and pick up",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "ui-bootstrap": "~0.13.3"
+  }
+}

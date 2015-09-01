@@ -1,0 +1,9 @@
+{
+  "firebase": "food-to-go",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
